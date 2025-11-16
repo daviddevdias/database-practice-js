@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Nome do usuário -->
+        <section class="usuario">
+            <h1>Seu nome</h1>
+            <input type="text" id="Seunome" placeholder="Digite seu nome">
+            <p id="Nome"></p>
+        </section>
+
+        
+        
+        <section></section>
+        <h4><span>Calcular média de Nota</span></h4>
+        
+        
+        <h3><span>Nota do Primero semestre</span></h3>
+        <input type="text" id="num1" placeholder="Primero semestre">
+        
+        <h3><span>Nota do Segundo semestre</span></h3>
+        <input type="text" id="num2" placeholder="Segundo semestre">
+        
+        <h3><span>Nota do Terceiro semestre</span></h3>
+        <input type="text" id="num3" placeholder="Terceiro semestre">
+        
+        <p id="Resultado"></p>
+        
+    </section>
+    
+    <!-- Lista de Tarefas -->
+    
+    <section class="tarefas">
+        <h3>Lista de Tarefas</h3>
+            <p>Adicione suas tarefas!</p>
+        
+            <div class="input-area">
+                <input type="text" id="InputTarefa" placeholder="Digite sua tarefa">
+                <button onclick="adicionartarefa(), mostrarNome(), Somar()" >Adicionar</button>
+            </div>
+
+            <p id="Aviso"></p>
+            <ul id="lista_Tarefa"></ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

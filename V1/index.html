@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Boas vindas</h1>
+        <p>Vamos começar seu ensino em java script basico</p>
+        <div class="saudacao" id="mensagem">Olá visitante</div>
+
+
+        <input type="text" id="nomeInput" placeholder="Digite seu nome">
+        <button onclick="mudarnome()">Seu nome </button>
+
+    </div>
+
+    <script>
+        function mudarnome() {
+            let nome = document.getElementById("nomeInput").value
+            if (nome.trim() === "") {
+                nome = "visitante"
+            }
+            document.getElementById("mensagem").textContent = "Olá " + nome
+        }
+
+
+    </script>
+</body>
+
+</html>

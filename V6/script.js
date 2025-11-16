@@ -1,0 +1,19 @@
+function Somar(){       
+
+   let n1 = parseFloat(document.getElementById("num1").value);
+   let n2 = parseFloat(document.getElementById("num2").value);
+   
+
+   valor = n1 / n2
+
+   let Resultado = document.getElementById("Resultado")
+
+   Resultado.textContent = "Valor Calculo " + valor
+
+   
+
+
+
+
+
+}
